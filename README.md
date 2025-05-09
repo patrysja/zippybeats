@@ -93,9 +93,7 @@ Oprogramowanie zostało stworzone na potrzeby przedmiotu Inżynieria Oprogramowa
 
 ### a. Lista wymagań
 
-| ID  | Nazwa                          | Opis                                                                 | Priorytet | Kategoria        |
-|-----|--------------------------------|----------------------------------------------------------------------|-----------|------------------|
-### Specyfikacja wymagań
+
 
 | ID   | Nazwa                          | Opis                                                                 | Priorytet | Kategoria         |
 |------|--------------------------------|----------------------------------------------------------------------|-----------|--------------------|
