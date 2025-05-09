@@ -2,7 +2,7 @@
 
 # 🎶 **ZippyBeats - Muzyczny Odtwarzacz dla Dzieci** 🎶
 
-ZippyBeats to aplikacja internetowa, która pozwala dzieciom odkrywać i słuchać muzykę w sposób interaktywny, zabawny i edukacyjny. Umożliwia tworzenie playlist, filtrowanie po tagach oraz łatwe odtwarzanie muzyki z popularnej platformy Spotify.
+ZippyBeats to aplikacja internetowa, która pozwala dzieciom odkrywać i słuchać muzykę w sposób interaktywny, zabawny i edukacyjny. Umożliwia odtwarzanie playlist, filtrowanie ich po tagach.
 
 ## 🚀 **Spis Treści**
 1. [Opis Aplikacji](#opis-aplikacji)
@@ -71,9 +71,9 @@ ZippyBeats
 ZippyBeats – interaktywny odtwarzacz muzyki dla dzieci z integracją Spotify
 
 ### c. Krótki opis ze wskazaniem celów
-ZippyBeats to aplikacja webowa wspomagająca rozwój emocjonalny i poznawczy dzieci poprzez muzykę. Umożliwia tworzenie i zarządzanie dziecięcymi playlistami z zasobów Spotify, dostosowanymi do wieku i nastroju najmłodszych. Interfejs został zaprojektowany w sposób przyjazny i kolorowy, wspierający pozytywne bodźce wizualne.
+ZippyBeats to aplikacja webowa wspomagająca rozwój emocjonalny i poznawczy dzieci poprzez muzykę.
 
-Celem projektu jest dostarczenie narzędzia umożliwiającego opiekunom, nauczycielom i dzieciom łatwe korzystanie z muzyki w sposób bezpieczny, uporządkowany i angażujący. Aplikacja integruje się z kontem Spotify użytkownika i oferuje losowe odtwarzanie, tworzenie playlist tematycznych oraz intuicyjny interfejs wspierający samodzielność dziecka.
+Celem projektu jest dostarczenie narzędzia umożliwiającego opiekunom, nauczycielom i dzieciom łatwe korzystanie z muzyki w sposób bezpieczny, uporządkowany i angażujący. Aplikacja integruje się z kontem Spotify użytkownika i oferuje losowe odtwarzanie, odtwarzabue playlist tematycznych oraz intuicyjny interfejs wspierający samodzielność dziecka.
 
 ---
 
@@ -83,7 +83,7 @@ Celem projektu jest dostarczenie narzędzia umożliwiającego opiekunom, nauczyc
 - Patrycja Stanisławczyk
 - Patrycja Duliasz
 - Natalia Knapik
-- 
+  
 ### b. Warunki licencyjne
 Oprogramowanie zostało stworzone na potrzeby przedmiotu Inżynieria Oprogramowania i udostępnione jest na licencji MIT.
 
@@ -101,12 +101,11 @@ Oprogramowanie zostało stworzone na potrzeby przedmiotu Inżynieria Oprogramowa
 |------|--------------------------------|----------------------------------------------------------------------|-----------|--------------------|
 | R1   | Logowanie przez Spotify        | Użytkownik loguje się przez OAuth 2.0 do swojego konta Spotify      | 1         | funkcjonalne       |
 | R2   | Pobieranie playlist z API      | Aplikacja pobiera playlisty z backendu lub bezpośrednio z Spotify   | 1         | funkcjonalne       |
-| R3   | Przeglądanie playlist dzieci   | Lista dostępnych playlist z obrazkami i tytułami                    | 1         | funkcjonalne       |
+| R3   | Przeglądanie playlist dzieci   | Lista dostępnych playlist z tytułami                    | 1         | funkcjonalne       |
 | R4   | Odtwarzacz muzyki              | Wbudowany odtwarzacz Spotify SDK do słuchania muzyki                | 1         | funkcjonalne       |
 | R5   | Tryb losowego odtwarzania      | Odtwarzanie losowego utworu z dostępnych playlist                   | 2         | funkcjonalne       |
-| R6   | Responsywność interfejsu       | Interfejs działa poprawnie na różnych rozdzielczościach             | 2         | pozafunkcjonalne   |
-| R7   | Kolorystyka i kontrast         | Przyjazny dzieciom design w odcieniach różu                          | 2         | pozafunkcjonalne   |
-| R8   | Ochrona błędów po stronie UI   | Informowanie użytkownika o błędach logowania lub tokenów            | 1         | pozafunkcjonalne   |
+| R6   | Kolorystyka i kontrast         | Przyjazny dzieciom design w odcieniach różu                          | 2         | pozafunkcjonalne   |
+| R7   | Ochrona błędów po stronie UI   | Informowanie użytkownika o błędach logowania lub tokenów            | 1         | pozafunkcjonalne   |
 
 
 ## 4. Architektura systemu
@@ -115,18 +114,18 @@ Oprogramowanie zostało stworzone na potrzeby przedmiotu Inżynieria Oprogramowa
 
 | Narzędzie/technologia | Przeznaczenie                        | Wersja    |
 |------------------------|--------------------------------------|-----------|
-| React.js              | Frontend aplikacji                   | 18.x      |
+| React.js              | Frontend aplikacji                   | 16.x      |
 | Node.js               | Backend do obsługi OAuth             | 18.x      |
 | Express               | Serwer API dla Spotify               | 4.x       |
 | Spotify Web API       | Integracja z kontem użytkownika      | N/A       |
 | GitHub                | System kontroli wersji               | N/A       |
-|
+| SSMS/T-SQL             | Baza danych przechowująca nazwy i url do playlist | N/A |
 
 ### b. Architektura uruchomieniowa
 
 | Narzędzie/technologia | Przeznaczenie                      | Wersja    |
 |------------------------|------------------------------------|-----------|
-| Google Chrome          | Przeglądarka testowa               | Najnowsza |
+| Google Chrome / Edge         | Przeglądarka testowa               | Najnowsza |
 | Node.js                | Serwer backendowy                  | 18.x      |
 | Spotify Account        | Uwierzytelnianie i odtwarzanie     | N/A       |
 
