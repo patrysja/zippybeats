@@ -41,7 +41,7 @@ Umożliwia także filtrowanie playlist za pomocą przyjaznego interfejsu i filtr
 
 ## 🔧 **Funkcjonalności**
 
-1. **Tworzenie playlist**:
+1. **Playlisty**
    - Użytkownicy mogą wybierać spośród wielu playlist przystosowanych specjalnie dla dzieci.
    
 2. **Filtrowanie playlist**:
@@ -60,5 +60,107 @@ Umożliwia także filtrowanie playlist za pomocą przyjaznego interfejsu i filtr
    - Intuicyjny i przyjazny interfejs z elementami przyjaznymi dla dzieci (np. duże przyciski, jasne kolory, wesoła czcionka).
 
 ---
+# Dokumentacja projektu – ZippyBeats
+
+## 1. Charakterystyka oprogramowania
+
+### a. Nazwa skrócona
+ZippyBeats
+
+### b. Nazwa pełna
+ZippyBeats – interaktywny odtwarzacz muzyki dla dzieci z integracją Spotify
+
+### c. Krótki opis ze wskazaniem celów
+ZippyBeats to aplikacja webowa wspomagająca rozwój emocjonalny i poznawczy dzieci poprzez muzykę. Umożliwia tworzenie i zarządzanie dziecięcymi playlistami z zasobów Spotify, dostosowanymi do wieku i nastroju najmłodszych. Interfejs został zaprojektowany w sposób przyjazny i kolorowy, wspierający pozytywne bodźce wizualne.
+
+Celem projektu jest dostarczenie narzędzia umożliwiającego opiekunom, nauczycielom i dzieciom łatwe korzystanie z muzyki w sposób bezpieczny, uporządkowany i angażujący. Aplikacja integruje się z kontem Spotify użytkownika i oferuje losowe odtwarzanie, tworzenie playlist tematycznych oraz intuicyjny interfejs wspierający samodzielność dziecka.
+
+---
+
+## 2. Prawa autorskie
+
+### a. Autorzy
+- Patrycja Stanisławczyk
+- Patrycja Duliasz
+- Natalia Knapik
+- 
+### b. Warunki licencyjne
+Oprogramowanie zostało stworzone na potrzeby przedmiotu Inżynieria Oprogramowania i udostępnione jest na licencji MIT.
+
+---
+
+## 3. Specyfikacja wymagań
+
+### a. Lista wymagań
+
+| ID  | Nazwa                          | Opis                                                                 | Priorytet | Kategoria        |
+|-----|--------------------------------|----------------------------------------------------------------------|-----------|------------------|
+### Specyfikacja wymagań
+
+| ID   | Nazwa                          | Opis                                                                 | Priorytet | Kategoria         |
+|------|--------------------------------|----------------------------------------------------------------------|-----------|--------------------|
+| R1   | Logowanie przez Spotify        | Użytkownik loguje się przez OAuth 2.0 do swojego konta Spotify      | 1         | funkcjonalne       |
+| R2   | Pobieranie playlist z API      | Aplikacja pobiera playlisty z backendu lub bezpośrednio z Spotify   | 1         | funkcjonalne       |
+| R3   | Przeglądanie playlist dzieci   | Lista dostępnych playlist z obrazkami i tytułami                    | 1         | funkcjonalne       |
+| R4   | Odtwarzacz muzyki              | Wbudowany odtwarzacz Spotify SDK do słuchania muzyki                | 1         | funkcjonalne       |
+| R5   | Tryb losowego odtwarzania      | Odtwarzanie losowego utworu z dostępnych playlist                   | 2         | funkcjonalne       |
+| R6   | Responsywność interfejsu       | Interfejs działa poprawnie na różnych rozdzielczościach             | 2         | pozafunkcjonalne   |
+| R7   | Kolorystyka i kontrast         | Przyjazny dzieciom design w odcieniach różu                          | 2         | pozafunkcjonalne   |
+| R8   | Ochrona błędów po stronie UI   | Informowanie użytkownika o błędach logowania lub tokenów            | 1         | pozafunkcjonalne   |
+
+
+## 4. Architektura systemu
+
+### a. Architektura rozwoju
+
+| Narzędzie/technologia | Przeznaczenie                        | Wersja    |
+|------------------------|--------------------------------------|-----------|
+| React.js              | Frontend aplikacji                   | 18.x      |
+| Node.js               | Backend do obsługi OAuth             | 18.x      |
+| Express               | Serwer API dla Spotify               | 4.x       |
+| Spotify Web API       | Integracja z kontem użytkownika      | N/A       |
+| GitHub                | System kontroli wersji               | N/A       |
+|
+
+### b. Architektura uruchomieniowa
+
+| Narzędzie/technologia | Przeznaczenie                      | Wersja    |
+|------------------------|------------------------------------|-----------|
+| Google Chrome          | Przeglądarka testowa               | Najnowsza |
+| Node.js                | Serwer backendowy                  | 18.x      |
+| Spotify Account        | Uwierzytelnianie i odtwarzanie     | N/A       |
+
+---
+
+## 5. Testy
+
+### a. Scenariusze testów
+
+#### Test R1 – Logowanie
+**Warunki początkowe:** Użytkownik nie jest zalogowany.  
+**Kroki:**
+1. Kliknij przycisk "Log in with Spotify"
+2. Zatwierdź dostęp na stronie Spotify  
+**Oczekiwany rezultat:** użytkownik zostaje przekierowany do `/playlists`
+
+#### Test R4 – Odtwarzanie utworu
+**Warunki początkowe:** Użytkownik jest zalogowany i wybrał playlistę  
+**Kroki:**
+1. Kliknij "▶️ Play"  
+**Oczekiwany rezultat:** utwór rozpoczyna się w odtwarzaczu Spotify SDK
+
+### b. Sprawozdanie z testów
+
+| ID testu | Wynik | Uwagi                          |
+|----------|-------|--------------------------------|
+| R1       | OK    | Logowanie działa poprawnie     |
+| R4       | OK    | Odtwarzanie działa zgodnie z API |
+
+---
+
+## Uwagi końcowe
+
+Projekt spełnia wszystkie kluczowe wymagania funkcjonalne i pozafunkcjonalne. Kod źródłowy znajduje się w repozytorium GitHub.
+
 
 
