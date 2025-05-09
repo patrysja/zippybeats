@@ -8,6 +8,14 @@ ZippyBeats to aplikacja internetowa, która pozwala dzieciom odkrywać i słucha
 1. [Opis Aplikacji](#opis-aplikacji)
 2. [Użyte Technologie](#użyte-technologie)
 3. [Funkcjonalności](#funkcjonalności)
+4. [Dokumentacja projektu – ZippyBeats](#dokumentacja-projektu-zippybeats)
+   - [Charakterystyka oprogramowania](#1-charakterystyka-oprogramowania)
+   - [Prawa autorskie](#2-prawa-autorskie)
+   - [Specyfikacja wymagań](#3-specyfikacja-wymagań)
+   - [Architektura systemu](#4-architektura-systemu)
+   - [Testy](#5-testy)
+   - [Wykorzystanie narzędzi wspomagających](#6-wykorzystanie-narzędzi-wspomagających)
+
 ---
 
 ## 🎵 **Opis Aplikacji**
@@ -56,6 +64,7 @@ Umożliwia także filtrowanie playlist za pomocą przyjaznego interfejsu i filtr
    - Intuicyjny i przyjazny interfejs z elementami przyjaznymi dla dzieci (np. duże przyciski, jasne kolory, wesoła czcionka).
 
 ---
+
 # Dokumentacja projektu – ZippyBeats
 
 ## 1. Charakterystyka oprogramowania
@@ -69,7 +78,7 @@ ZippyBeats – interaktywny odtwarzacz muzyki dla dzieci z integracją Spotify
 ### c. Krótki opis ze wskazaniem celów
 ZippyBeats to aplikacja webowa wspomagająca rozwój emocjonalny i poznawczy dzieci poprzez muzykę.
 
-Celem projektu jest dostarczenie narzędzia umożliwiającego opiekunom, nauczycielom i dzieciom łatwe korzystanie z muzyki w sposób bezpieczny, uporządkowany i angażujący. Aplikacja integruje się z kontem Spotify użytkownika i oferuje losowe odtwarzanie, odtwarzabue playlist tematycznych oraz intuicyjny interfejs wspierający samodzielność dziecka.
+Celem projektu jest dostarczenie narzędzia umożliwiającego opiekunom, nauczycielom i dzieciom łatwe korzystanie z muzyki w sposób bezpieczny, uporządkowany i angażujący. Aplikacja integruje się z kontem Spotify użytkownika i oferuje losowe odtwarzanie, odtwarzanie playlist tematycznych oraz intuicyjny interfejs wspierający samodzielność dziecka.
 
 ---
 
@@ -89,8 +98,6 @@ Oprogramowanie zostało stworzone na potrzeby przedmiotu Inżynieria Oprogramowa
 
 ### a. Lista wymagań
 
-
-
 | ID   | Nazwa                          | Opis                                                                 | Priorytet | Kategoria         |
 |------|--------------------------------|----------------------------------------------------------------------|-----------|--------------------|
 | R1   | Logowanie przez Spotify        | Użytkownik loguje się przez OAuth 2.0 do swojego konta Spotify      | 1         | funkcjonalne       |
@@ -100,7 +107,6 @@ Oprogramowanie zostało stworzone na potrzeby przedmiotu Inżynieria Oprogramowa
 | R5   | Tryb losowego odtwarzania      | Odtwarzanie losowego utworu z dostępnych playlist                   | 2         | funkcjonalne       |
 | R6   | Kolorystyka i kontrast         | Przyjazny dzieciom design w odcieniach różu                          | 2         | pozafunkcjonalne   |
 | R7   | Ochrona błędów po stronie UI   | Informowanie użytkownika o błędach logowania lub tokenów            | 1         | pozafunkcjonalne   |
-
 
 ## 4. Architektura systemu
 
@@ -151,9 +157,9 @@ Oprogramowanie zostało stworzone na potrzeby przedmiotu Inżynieria Oprogramowa
 
 ---
 
-## Uwagi końcowe
+## 6. Wykorzystanie narzędzi wspomagających
 
-Projekt spełnia wszystkie kluczowe wymagania funkcjonalne i pozafunkcjonalne. Kod źródłowy znajduje się w repozytorium GitHub.
+### a. Debugowanie i komentarze w kodzie
 
-
+Podczas pracy nad projektem, korzystałyśmy również z **czatu GPT**, który pomógł nam w **debugowaniu** oraz **generowaniu komentarzy** do kodu. Dzięki temu mogłyśmy szybciej znaleźć rozwiązania problemów związanych z błędami, a także wzbogacić kod o przejrzyste komentarze, które ułatwiły zrozumienie poszczególnych fragmentów aplikacji. Czat GPT był także pomocny w tworzeniu **wskazówek** oraz sugerowaniu **optymalnych rozwiązań** technicznych, co znacząco przyspieszyło rozwój aplikacji i poprawiło jej jakość.
 
