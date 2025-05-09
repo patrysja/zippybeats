@@ -8,10 +8,6 @@ ZippyBeats to aplikacja internetowa, która pozwala dzieciom odkrywać i słucha
 1. [Opis Aplikacji](#opis-aplikacji)
 2. [Użyte Technologie](#użyte-technologie)
 3. [Funkcjonalności](#funkcjonalności)
-4. [Instalacja](#instalacja)
-5. [Struktura Katalogów](#struktura-katalogów)
-6. [Znane Problemy](#znane-problemy)
-
 ---
 
 ## 🎵 **Opis Aplikacji**
